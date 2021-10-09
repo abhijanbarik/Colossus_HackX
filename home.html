@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <script src="./MedicalEmergency.js"></script>
+    <script src="./m-leaflet.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="uk-padding"><button id="triggerMeHelp" class="uk-button uk-button-danger">Trigger Help</button></div>
+      <ul uk-tab>
+        <li><a href="#" id="peopleTab">People</a></li>
+        <li><a href="#" id="hospitalTab">Hospital</a></li>
+        <li><a href="#" id="ambulanceTab">Ambulance</a></li>
+      </ul>
+    </div>
+    <div id="mapid" class="uk-height-1-1"></div>
+  </body>
+</html>
